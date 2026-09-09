@@ -1,0 +1,274 @@
+** {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffe6ee;
+    color: #8b1538;
+    text-align: center;
+}
+
+/* HOME PAGE */
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    margin-bottom: 10px;
+    color: #c9184a;
+}
+
+.home p {
+    font-size: 20px;
+    color: #8b1538;
+    margin-bottom: 25px;
+}
+
+
+/* BUTTONS */
+
+button {
+    border: none;
+    background: #c9184a;
+    color: white;
+    padding: 14px 28px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: #a4133c;
+    transform: scale(1.08);
+}
+
+
+/* OPTIONS PAGE */
+
+.options {
+    display: none;
+    min-height: 100vh;
+    padding: 100px 20px;
+    background: #fff0f5;
+}
+
+.options h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #c9184a;
+    margin-bottom: 40px;
+}
+
+
+/* LETTER PAGE */
+
+.letter {
+    display: none;
+    min-height: 100vh;
+    padding: 70px 20px;
+    background: #ffe6ee;
+}
+
+.letter-card {
+    max-width: 600px;
+    margin: auto;
+    padding: 45px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(201, 24, 74, 0.15);
+}
+
+.letter-card h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #c9184a;
+    margin-bottom: 30px;
+}
+
+.letter-card p {
+    color: #8b1538;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.signature {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+/* MEMORIES */
+
+.memories {
+    display: none;
+    min-height: 100vh;
+    padding: 70px 20px;
+    background: #ffe6ee;
+}
+
+.memory-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(201, 24, 74, 0.15);
+}
+
+.memory-card h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #c9184a;
+}
+
+.photo-box {
+    margin: 25px 0;
+}
+
+.photo-box img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin-top: 25px;
+}
+
+.photo-box p {
+    color: #8b1538;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.memory-text {
+    color: #8b1538;
+    font-size: 18px;
+}
+
+
+/* REASONS */
+
+.reasons {
+    display: none;
+    min-height: 100vh;
+    padding: 70px 20px;
+    background: #ffe6ee;
+}
+
+.reasons-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(201, 24, 74, 0.15);
+}
+
+.reasons-card h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #c9184a;
+}
+
+.reason {
+    background: #fff0f5;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.reason:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(201, 24, 74, 0.15);
+}
+
+.reason h2 {
+    color: #c9184a;
+}
+
+.reason p {
+    color: #8b1538;
+    font-size: 17px;
+}
+
+
+/* FLOATING HEARTS */
+
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hearts span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 30px;
+    color: #c9184a;
+    animation: float 6s linear infinite;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(3) {
+    left: 45%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(4) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(5) {
+    left: 80%;
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(6) {
+    left: 90%;
+    animation-delay: 5s;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
